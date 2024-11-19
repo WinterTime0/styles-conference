@@ -115,9 +115,9 @@ body {
 }
 .group {
   clear: both;
-  zoom: 1;
+  *zoom: 1;
 }
-/*Boop*/
+
 /*
   ========================================
   Rows
@@ -293,6 +293,7 @@ p a {
   Navigation
   ========================================
 */
+
 .nav {
   text-align: right;
 }
@@ -304,6 +305,7 @@ p a {
 .nav li:last-child {
   margin-right: 0;
 }
+
 /*
   ========================================
   Home
@@ -326,18 +328,48 @@ p a {
 .teaser a:hover h3 {
   color: #a9b2b9;
 }
+.teaser img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%
+}
+
 /*
   ========================================
   Speakers
   ========================================
 */
+
+.speaker {
+  margin-bottom: 44px;
+}
 .speaker-info {
   border: 1px solid #dfe2e5;
   border-radius: 5px;
   margin-top: 88px;
-  padding: 22px 0;
+  padding-bottom: 22px;
   text-align: center;
 }
-.speaker {
-  margin-bottom: 44px;
+.speaker-info img {
+  border-radius: 50%;
+  height: 130px;
+  margin: -66px 0 22px 0;
+  vertical-align: top;
+}
+
+/*
+  ========================================
+  Venue
+  ========================================
+*/
+
+.venue-theatre {
+  margin-bottom: 66px;
+}
+.venue-hotel {
+  margin-bottom: 22px;
+}
+.venue-map {
+  height: 264px;
 }
